@@ -162,3 +162,5 @@ cython_debug/
 # Ignore directories under 'tests', except 'dlp'
 tests/*/
 !tests/dlp/
+
+*.db

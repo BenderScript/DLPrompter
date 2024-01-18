@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "genai_dlp_prompter"
+version = "0.1.0"
+description = "GenAI DLP and Prompt generator"
+authors = ["BenderScript <6779302+BenderScript@users.noreply.github.com>"]
+readme = "README.md"
+packages = [
+    { include = "dlp_data_gen" },
+    { include = "dlp_data_scraper" },
+    { include = "file_utils"},
+    { include = "prompt_gen" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fpdf = "^1.7.2"
+selenium = "^4.16.0"
+bs4 = "^0.0.1"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+
+
+
+

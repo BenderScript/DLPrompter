@@ -159,8 +159,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# Ignore everything under 'tests' directory
-tests/*
-
-# But exclude the 'dlp' directory
+# Ignore directories under 'tests', except 'dlp'
+tests/*/
 !tests/dlp/

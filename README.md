@@ -61,6 +61,26 @@ print("Scraping and conversion to PDF completed.")
 After the run is over, the generated data under the `umbrella/text_data` 
 and `umbrella/pdf_data` directory. There will be one file for each DLP category.
 
+# To use the OpenAI Chat DLP Prompt generator:
+
+```python
+
+from prompt_gen.openai_chat import OpenAIChat
+
+
+# Initialize the Assistant class
+chat_gen = OpenAIChat(text_data="openai_chat_prompt/text_data",
+                          pdf_data="openai_chat_prompt/pdf_data",
+                          dlp_categories_file="dlp/dlp_categories.md")
+
+chat_gen.run()
+
+```
+
+After the run is over there will 90+ LLM Prompts based on the DLP categories. 
+The generated data will be under the `openai_chat_prompt/text_data` and 
+`openai_chat_prompt/pdf_data` directories. 
+
 
 # To use the OpenAI Assistant DLP generator:
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "genai_dlp_prompter"
-version = "0.1.0"
+version = "0.1.1"
 description = "GenAI DLP and Prompt generator"
 authors = ["BenderScript <6779302+BenderScript@users.noreply.github.com>"]
 readme = "README.md"
